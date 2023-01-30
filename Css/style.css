@@ -172,20 +172,24 @@
     background-color: rgba(0, 0, 0, 0.902);
 }
 
-.footer p{
+.footer a{
     font-family:'Poppins', sans-serif;;
     padding: 2px;    
     color: white;
     height: 20px;
     opacity: .15;
+    text-decoration: none;
 }
 
-.footer p:hover{
+.footer a:hover{
     color: aliceblue;
     opacity: .5;
     border-radius: 7px;
 } 
 
+.footer div{
+    display: none;
+}
 
 
 /* .main aside{
@@ -198,20 +202,20 @@
 
 /*Seccion Contacto */
 
-.main-contact{
+.main-contact {
     display: flex;
     position: relative;
     top: 10vh;
     flex-direction: column;
-    height: 90vh;
     justify-content: flex-start;
+    align-items: center;
 }
-
 .form{
     display: flex;
     background-color: rgba(0, 0, 0, 0.902);
     padding: 30px;
-    height: 90vh;
+    height: 45vh;
+    width: 100%;
     flex-direction: column;
     align-content: space-between;
     justify-content: center;
@@ -239,7 +243,7 @@
 }
 
 /* Seccion Sobre Nosotros */
-
+/* 
 .main-aboutus{
     display: flex;
     position: relative;
@@ -248,10 +252,11 @@
     height: 90vh;
     justify-content: flex-start;
 }
+ */
 
-
-.main-aboutus article{
+.main-contact article{
     height: 90vh;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.902);
     color: aliceblue;
     text-align: center;
@@ -263,3 +268,11 @@
 }
 
 
+@media (max-width: 390px){
+    .footer a{
+        display: none;
+    }
+    .footer div{
+        display: contents;
+    }
+}
