@@ -144,7 +144,8 @@
 
 
 .images :hover{
-    opacity: .5;
+    transform: "opacity: 0.5";
+    
 }
 
 .images-2 :hover{
@@ -170,6 +171,7 @@
     align-items: center;
     /* background-image: linear-gradient(180deg,#322f2f33 0%,#ffffffc4 100%), url(/Recursos/images/negro.png); */
     background-color: rgba(0, 0, 0, 0.902);
+    border: none;
 }
 
 .footer a{
@@ -243,15 +245,30 @@
 }
 
 /* Seccion Sobre Nosotros */
-/* 
-.main-aboutus{
+
+.main-ourservices{
     display: flex;
     position: relative;
     top: 10vh;
-    flex-direction: column;
     height: 90vh;
-    justify-content: flex-start;
-} */
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-ourservices article{
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.902);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.main-ourservices article p{
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;   
+}
+
+
 
 .main-products{
     position: relative;
@@ -281,7 +298,7 @@
 .main-products section div:hover{
     background-color: orange;
     margin: 10px;
-    opacity: .95;
+    
 
 }
 .producto-1{
@@ -396,11 +413,38 @@
 }
 
 
-@media (max-width: 390px){
+@media (max-width: 400px){
     .footer a{
         display: none;
     }
     .footer div{
         display: contents;
+    }
+    .main-products{
+        position: relative;
+        display: flex;
+        top: 10vh;
+        flex-direction: column;
+        height: 200vh;
+        justify-content: flex-start;
+    }
+    .main-products section{
+        height: 195.58vh;
+        display: grid;
+        grid-template-columns: repeat(4,2fr);
+        grid-template-rows: repeat(8,2fr);
+        color: blue;
+        border: none;
+        grid-template-areas: "producto-1 producto-1 producto-1 producto-1"
+                             "producto-2 producto-2 producto-2 producto-2"
+                             "producto-3 producto-3 producto-3 producto-3"
+                             "producto-4 producto-4 producto-4 producto-4"
+                             "producto-5 producto-5 producto-5 producto-5"
+                             "producto-6 producto-6 producto-6 producto-6"
+                             "producto-7 producto-7 producto-7 producto-7"
+                             "producto-8 producto-8 producto-8 producto-8"
+
+                             ;   
+        background-color: rgba(0, 0, 0, 0.902);
     }
 }
